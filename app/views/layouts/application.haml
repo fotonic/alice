@@ -2,8 +2,27 @@
 %html
   %head
     %title Alice
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
     = stylesheet_link_tag    'application', media: 'all'
     = javascript_include_tag 'application'
     = csrf_meta_tags
   %body
+  .container-fluid
+    .navbar-header
+
+
+    #bs-example-navbar-collapse-1.collapse.navbar-collapse
+      %ul.nav.navbar-nav
+
+      %ul.nav.navbar-nav.navbar-right
+        %li.mainNav
+          = link_to "home", root_path
+        %li.mainNav
+          = link_to "about", "#"
+        %li.mainNav
+          = link_to "menu", "#"
+        %li.mainNav
+          = link_to "contact", "#"
+
+
     = yield

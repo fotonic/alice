@@ -14,6 +14,8 @@ gem 'haml', '~> 4.0', '>= 4.0.7'
 gem 'haml-rails', '~> 0.9.0'
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.5.1'
 gem 'sass-rails', '~> 5.0', '>= 5.0.4'
+gem 'autoprefixer-rails'
+gem 'angularjs-rails', '~> 1.4', '>= 1.4.7'
 
 group :development, :test do
   gem 'byebug'
@@ -22,3 +24,6 @@ group :development, :test do
   gem 'spring'
   gem 'pry-rails', '~> 0.3.4'
 end
+
+gem 'rails_12factor', group: :production
+ruby "2.2.2"
